@@ -1,7 +1,7 @@
 'use client'
 
 import { Box, HStack, Image, Center, IconButton } from "@chakra-ui/react";
-import { IoMdLogIn, IoMdNotifications } from "react-icons/io";
+import { IoMdLogIn } from "react-icons/io";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { GrUserFemale } from "react-icons/gr";
 import { PiListHeartBold } from "react-icons/pi";

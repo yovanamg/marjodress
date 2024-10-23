@@ -1,6 +1,6 @@
 'use client'
 
-import { Center, Divider, HStack, Text, IconButton, Box, List, ListIcon, ListItem, Spacer } from "@chakra-ui/react"
+import { Center, Divider, HStack, Text, IconButton, Box, List, ListItem, Spacer } from "@chakra-ui/react"
 import { GiDragonfly } from "react-icons/gi";
 import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import { IoLogoFacebook, IoIosCheckmarkCircle } from "react-icons/io";

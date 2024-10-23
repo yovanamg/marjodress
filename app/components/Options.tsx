@@ -19,7 +19,7 @@ export default function Options() {
                   EVENING
                 </MenuItem>
                 <MenuItem as='a' href='#'>
-                  XV'S
+                  XV
                 </MenuItem>
                 <MenuItem as='a' href='#'>
                   NIGHT OUT

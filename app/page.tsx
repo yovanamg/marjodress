@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
 import { Divider, Box, HStack, Spacer } from "@chakra-ui/react";
 import Header from "./components/Header";
 import Options from "./components/Options";
