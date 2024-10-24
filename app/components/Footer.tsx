@@ -1,6 +1,6 @@
 'use client'
 
-import { Center, Divider, HStack, Text, IconButton, Box, List, ListItem, Spacer } from "@chakra-ui/react"
+import { Center, Divider, Grid, Text, IconButton, GridItem, List, ListItem, Spacer } from "@chakra-ui/react"
 import { GiDragonfly } from "react-icons/gi";
 import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import { IoLogoFacebook, IoIosCheckmarkCircle } from "react-icons/io";
@@ -9,33 +9,37 @@ export default function Footer() {
 
   return (
     <div>
-    <HStack spacing='50px' bg='#beae956e' padding='20px 0'>
-    <Spacer />
-      <Box>
-        <IconButton as='a' href='#'
+    <Grid textAlign='center'
+    templateColumns={{
+      base: 'repeat(2, 1fr)',
+      md: 'repeat(2, 1fr)',
+      lg: 'repeat(4, 1fr)'
+    }} bg='#beae956e' padding='20px 0'>
+      <GridItem>
+        <IconButton as='a' href='www.instagram.com/marjodress'
            fontSize='20px' bg='#e3dcd1'
           _hover={{ color: "#f456a6"}} 
           aria-label='Lista de deseos' 
           icon={<IoLogoInstagram />} 
         />
-        <IconButton  as='a' href='#'
+        <IconButton  as='a' href='www.facebook.com/marjodress'
            fontSize='20px' bg='#e3dcd1'
           _hover={{ color: "#f456a6"}} 
           aria-label='Lista de deseos' 
           icon={<IoLogoFacebook  />} 
         />
         <Text>MarjoDress</Text>
-      </Box>
-      <Box>
-        <IconButton 
+      </GridItem>
+      <GridItem>
+        <IconButton as='a' href='wa.me/6672670004'
            fontSize='20px' bg='#e3dcd1'
           _hover={{ color: "#f456a6"}} 
           aria-label='Lista de deseos' 
           icon={<IoLogoWhatsapp  />} 
         />
         <Text>WhatsApp</Text>
-      </Box>
-      <Box>
+      </GridItem>
+      <GridItem>
         <List spacing={3}>
           <Text textAlign='center' fontWeight='bold'>FAQ</Text>
           <ListItem as='a' href='#' >
@@ -57,8 +61,8 @@ export default function Footer() {
              Return & exchange
           </ListItem>
         </List>
-      </Box>
-      <Box>
+      </GridItem>
+      <GridItem>
       <List spacing={3}>
           <Text textAlign='center' fontWeight='bold'>Information</Text>
           <ListItem as='a' href='#'>
@@ -80,9 +84,9 @@ export default function Footer() {
             Track your package
           </ListItem>
         </List>
-      </Box>
+      </GridItem>
       <Spacer />
-    </HStack>
+    </Grid>
     <Divider />
     <Center bg='#beae956e' padding=' 20px 0'>
       <IconButton 

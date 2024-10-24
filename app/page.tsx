@@ -5,11 +5,11 @@ import Options from "./components/Options";
 import Carrusel from "./components/Carrusel";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
+import Banner from "./components/Banner";
 
 export default async function Home() {
   return (
     <div>
-      <main>
         <Header />
         <Divider />
         <Options />
@@ -21,8 +21,8 @@ export default async function Home() {
           <Spacer />
         </HStack>
         <Products />
+        <Banner />
         <Footer />
-      </main>
     </div>
   );
 }

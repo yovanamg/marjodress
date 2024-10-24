@@ -1,48 +1,31 @@
 'use client'
-import { Box, HStack, Menu, MenuButton, MenuItem, MenuList, Spacer } from "@chakra-ui/react";
+import { GridItem, Grid } from "@chakra-ui/react";
 export default function Options() {
 
   return (
-    <HStack direction={['column', 'row']} spacing='50px' margin='15px 0' fontWeight="bold">
-      <Spacer />
-        <Box as='a' href='#'>
+    <Grid 
+      margin={{
+        base: '15px 0',
+        md: '15px 0',
+        lg: '15px 7em' 
+    }} fontWeight="bold" textAlign='center'
+    templateColumns={{
+      base: 'repeat(2, 1fr)',
+      md: 'repeat(2, 1fr)',
+      lg: 'repeat(4, 1fr)'
+    }}>
+        <GridItem as='a' href='/allbrands'>
           ALL BRANDS
-        </Box>
-        <Box>
-          <Menu>
-            <MenuButton fontWeight="bold">OCCASIONS</MenuButton>
-            <MenuList>
-                <MenuItem as='a' href='#'>
-                  PROM
-                </MenuItem>
-                <MenuItem as='a' href='#'>
-                  EVENING
-                </MenuItem>
-                <MenuItem as='a' href='#'>
-                  XV
-                </MenuItem>
-                <MenuItem as='a' href='#'>
-                  NIGHT OUT
-                </MenuItem>
-                <MenuItem as='a' href='#'>
-                  CURVE PLUS
-                </MenuItem>
-                <MenuItem as='a' href='#'>
-                  BRIDESMAID
-                </MenuItem>
-            </MenuList>
-          </Menu>
-        </Box>
-        <Box as='a' href='#'>
+        </GridItem>
+        <GridItem as='a' href='/wedding'>
           WEDDING
-        </Box>
-        <Box as='a' href='#'>
+        </GridItem>
+        <GridItem as='a' href='/bridesmuse'>
           BRIDESMUSE
-        </Box>
-        <Box as='a' href='#'>
+        </GridItem>
+        <GridItem as='a' href='/outlet'>
             OUTLET
-        </Box>
-      <Spacer />
-    </HStack>
+        </GridItem>
+    </Grid>
   )
 }
